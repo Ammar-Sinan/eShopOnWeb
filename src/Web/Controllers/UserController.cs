@@ -8,7 +8,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.eShopWeb.ApplicationCore.Interfaces;
 
 namespace Microsoft.eShopWeb.Web.Controllers;
-
+// Added to create a PR
 [Route("[controller]")]
 [ApiController]
 public class UserController : ControllerBase
@@ -24,7 +24,7 @@ public class UserController : ControllerBase
     [Authorize]
     [AllowAnonymous]
     public async Task<IActionResult> GetCurrentUser() =>
-        Ok(await CreateUserInfos(User));
+        Ok(await CreateUserInfo(User));
 
     private async Task<UserInfo> CreateUserInfo(ClaimsPrincipal claimsPrincipal)
     {
