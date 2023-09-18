@@ -8,7 +8,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.eShopWeb.ApplicationCore.Interfaces;
 
 namespace Microsoft.eShopWeb.Web.Controllers;
-// Added to create a PR - testing
+// Added to create a PR - testing - thus change wont break
 [Route("[controller]")]
 [ApiController]
 public class UserController : ControllerBase
