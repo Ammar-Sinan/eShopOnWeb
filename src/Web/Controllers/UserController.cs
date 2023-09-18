@@ -24,7 +24,7 @@ public class UserController : ControllerBase
     [Authorize]
     [AllowAnonymous]
     public async Task<IActionResult> GetCurrentUser() =>
-        Ok(await CreateUserInfo(User));
+        Ok(await CreateUserInfos(User));
 
     private async Task<UserInfo> CreateUserInfo(ClaimsPrincipal claimsPrincipal)
     {
